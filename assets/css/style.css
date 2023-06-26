@@ -1,61 +1,76 @@
 body {
-    background-color: rgb(201, 201, 201);
+    background-size: cover;
     text-align: left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 section {
     margin: 5%;
     width: 90%;
-    background-color: rgb(102, 102, 192);
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    box-shadow: 5px 5px grey;
+    box-shadow: 5px 5px rgb(70, 70, 70);
+    margin-bottom: 5%;
 }
 
 header {
     text-align: center;
     font-size: large;
     font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-bottom: 8%;
+}
+
+header nav {
+    float: right;
+    margin-right: 42%;
+    font-size: 20px;
+}
+
+header nav ul li {
+    display: inline;
+    margin-top: 5%;
+    margin-left: 30px;
+    text-decoration: none;
 }
 
 ul {
     text-align: left;
+    color: aliceblue;
+}
+
+h2, h3 {
+    color:aliceblue
+}
+
+h2 {
+    font-size: 25px;
+    text-decoration: underline;
 }
 
 h3 {
     text-align: left;
 }
 
-header nav {
-    float: right;
-    margin-right: 42%;
-}
-
 p {
     text-align: left;
+    color: aliceblue;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 5%;
 }
 
 header nav ul {
     list-style-type: none;
+    text-decoration: none;
 }
 
 div ul {
     list-style-type: none;
-}
-
-header nav ul li {
-    display: inline;
-    margin-left: 30px;
-}
-
-@media screen and (max-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
-    header {
-        background: rgb(102, 102, 192);
-        box-shadow: 5px 5px grey;
-    }
-
+    text-decoration: none;
 }
 
 footer {
@@ -67,4 +82,18 @@ footer {
 
 footer h2 {
     font-size: 20px;
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    nav {
+        flex-direction: column;
+    }
+    section a {
+        
+    }
 }
