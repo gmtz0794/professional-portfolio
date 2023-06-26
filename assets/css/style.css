@@ -15,15 +15,18 @@ section {
     margin-bottom: 5%;
 }
 
-header {
+h1 {
+    font-size: 60px;
     text-align: center;
-    font-size: large;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    margin-bottom: 8%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-header nav {
+nav {
+    margin-top: 5%;
+    margin-left: 38%;
+}
+
+.about {
     float: right;
     margin-right: 42%;
     font-size: 20px;
@@ -45,7 +48,7 @@ h2, h3 {
     color:aliceblue
 }
 
-h2 {
+section h2 {
     font-size: 25px;
     text-decoration: underline;
 }
@@ -63,6 +66,11 @@ p {
     margin-bottom: 5%;
 }
 
+section img {
+    margin-left: 1.5%;
+    display: inline;
+}
+
 header nav ul {
     list-style-type: none;
     text-decoration: none;
@@ -76,24 +84,35 @@ div ul {
 footer {
     padding: 30px;
     clear: both;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     text-align: center;
 }
 
 footer h2 {
-    font-size: 20px;
+    font-size: 15px;
     color: black;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1038px) {
     h1 {
-        font-size: 40px;
+        font-size: 50px;
         line-height: 50px;
+        margin-left: 30%;
+        text-align: center;
     }
     nav {
         flex-direction: column;
+        margin-right: 15%;
     }
-    section a {
-        
+    section {
+        margin-left: 30%;
+    }
+    img {
+        max-width: 97%;
+        margin-right: 30%;
+    }
+    footer {
+        text-align: center;
+        font-size: 15px;
     }
 }
