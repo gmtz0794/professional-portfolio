@@ -6,7 +6,7 @@ body {
 section {
     margin: 5%;
     width: 90%;
-    background-color: rgb(82, 82, 250);
+    background-color: rgb(102, 102, 192);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-shadow: 5px 5px grey;
 }
@@ -38,18 +38,33 @@ header nav ul {
     list-style-type: none;
 }
 
+div ul {
+    list-style-type: none;
+}
+
 header nav ul li {
     display: inline;
     margin-left: 30px;
 }
 
-@media screen and (max-width: 758px) {
+@media screen and (max-width: 768px) {
     nav {
         flex-direction: column;
     }
     header {
-        background: rgb(82, 82, 250);
+        background: rgb(102, 102, 192);
         box-shadow: 5px 5px grey;
     }
 
+}
+
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 20px;
 }
