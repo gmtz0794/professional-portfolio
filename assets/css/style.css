@@ -1,3 +1,5 @@
+/* Consolidated body sections */
+
 body {
     background-size: cover;
     text-align: left;
@@ -14,6 +16,8 @@ section {
     box-shadow: 5px 5px rgb(70, 70, 70);
     margin-bottom: 5%;
 }
+
+/* Consolidated header and nav elements */
 
 h1 {
     font-size: 60px;
@@ -38,6 +42,8 @@ header nav ul li {
     margin-left: 30px;
     text-decoration: none;
 }
+
+/* Consolidated text size and decorations elements */
 
 ul {
     text-align: left;
@@ -66,9 +72,16 @@ p {
     margin-bottom: 5%;
 }
 
+/* Consolidated img elements */
+
 section img {
     margin-left: 1.5%;
     display: inline;
+}
+
+header img {
+    margin-left: 41%;
+    margin-top: 5%;
 }
 
 header nav ul {
@@ -81,6 +94,8 @@ div ul {
     text-decoration: none;
 }
 
+/* Consolidated footer section */
+
 footer {
     padding: 30px;
     clear: both;
@@ -92,6 +107,8 @@ footer h2 {
     font-size: 15px;
     color: black;
 }
+
+/* Consolidated media command for pixel size */
 
 @media screen and (max-width: 1038px) {
     h1 {
