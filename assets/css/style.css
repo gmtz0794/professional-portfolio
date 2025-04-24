@@ -1,136 +1,28 @@
-/* 
-body {
-    background-size: cover;
-    text-align: left;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
 
-section {
-    margin: 5%;
-    width: 90%;
-    background-color: rgb(0, 0, 0);
-    opacity: 0.7;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    box-shadow: 5px 5px rgb(70, 70, 70);
-    margin-bottom: 5%;
-}
-
-h1 {
-    font-size: 60px;
-    text-align: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-
-nav {
-    margin-top: 5%;
-    margin-left: 38%;
-}
-
-.about {
-    float: right;
-    margin-right: 42%;
-    font-size: 20px;
-}
-
-header nav ul li {
-    display: inline;
-    margin-top: 5%;
-    margin-left: 30px;
-    text-decoration: none;
-}
-
-ul {
-    text-align: left;
-    color: aliceblue;
-}
-
-h2, h3 {
-    color:aliceblue
-}
-
-section h2 {
-    font-size: 25px;
-    text-decoration: underline;
-}
-
-h3 {
-    text-align: left;
-}
-
-p {
-    text-align: left;
-    color: aliceblue;
-    font-size: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 5%;
-}
-
-section img {
-    margin-left: 1.5%;
-    display: inline;
-}
-
-header img {
-    margin-left: 41%;
-    margin-top: 5%;
-}
-
-header nav ul {
-    list-style-type: none;
-    text-decoration: none;
-}
-
-div ul {
-    list-style-type: none;
-    text-decoration: none;
-}
-
-footer {
-    padding: 30px;
-    clear: both;
-    font-family:'Times New Roman', Times, serif;
-    text-align: center;
-}
-
-footer h2 {
-    font-size: 15px;
-    color: black;
-}
-
-@media screen and (max-width: 422px) {
-    h1 {
-        font-size: 50px;
-        line-height: 50px;
-        margin-left: 30%;
-        text-align: center;
-    }
-    nav {
-        flex-direction: column;
-        margin-right: 15%;
-    }
-    section {
-        margin-left: 30%;
-    }
-    img {
-        max-width: 97%;
-        margin-right: 30%;
-    }
-    footer {
-        text-align: center;
-        font-size: 15px;
-    }
-} */
 
 body {
-    background-color: rgb(240, 245, 255);
+    background-color: black;
     margin: 0;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 }
 
-.wrap {
+/* .wrap {
     margin: 2em;
+} */
+
+header {
+    width: 100%;
+    height: 30vh;
+    background-image: url(../image/blckbg.png);
+    background-size: cover;
+    background-position: center;
+    display: flow-root;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+li {
+    color: aliceblue;
 }
 
 nav ul {
@@ -148,23 +40,23 @@ nav ul {
     padding: 1em;
     transform: translateX(100%);
     transition: 0.5s ease-in-out;
-
+/* navbar desktop */
     li {
-      margin: 2.5em 0 0 4em;
+      margin: 2.5em 0 0 6em;
       
       &:nth-of-type(1) {
         margin-bottom: 4em;
       }
 
       a {
-        color: black;
+        color: rgb(255, 255, 255);
         text-decoration: none;
         font-weight: bold;
         font-size: 1.5em;
 
         &:hover {
             color:brown;
-            font-size: 1.7em;
+            font-size: 1.6em;
             cursor: pointer;
         }
       }
@@ -174,16 +66,64 @@ nav ul {
 .about,
 .experience,
 .contact {
-    background-color: rgba(0, 0, 255, 0.486);
+    /* background-color: rgba(0, 0, 255, 0.486); */
     margin-top: auto;
     border-radius: 0.4em;
 }
 
-.about-me {
+.about-me,
+.work-experience,
+.contact-info {
     display: flex;
     justify-content: space-between;
+    
 }
 
+.open {
+    transform: translateX(0%);
+}
+
+.menu-open {
+    position: fixed;
+    bottom: 50px;
+    right: 60px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 7px;
+    border: 1px black;
+}
+h1, p {
+    text-align: center;
+    color:aliceblue;
+}
+
+h1 {
+    /* margin-left: 25px; */
+    font-size:60px;
+}
+
+h2 {
+    padding: 3rem;
+    color: aliceblue;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    padding: 100px;
+}
+
+.projects {
+    text-align: center;
+}
+
+footer {
+    background-color: bisque;
+    color: black;
+    text-align: center;
+    padding: 1;
+}
+/* mobile view */
 @media (min-width: 880px) {
     .wrap {
         margin: 0 4em;
