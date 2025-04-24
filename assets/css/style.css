@@ -125,6 +125,7 @@ p {
 
 .challenges {
     display: block;
+    background-color: aliceblue;
 }
 
 .projects {
