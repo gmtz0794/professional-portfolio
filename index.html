@@ -9,24 +9,14 @@
 </head>
 
 <body>
-    <!-- <div class="wrap"> -->
+
     <header>
-        <div class="header-left">
+        <div id="header-left">
             <h1>Gustavo Martinez</h1>
         </div>
 
         <nav>
-            <a href="#" class="menu-open hide-desktop">
-                <img src="assets/image/openmenu.svg" height="40" alt="Open Menu">
-            </a>
-
             <ul>
-                <li>
-                    <a href="#" class="menu-close hide-mobile">
-                        <img src="assets/image/closemenu.svg" height="40" alt="Close Menu">
-                    </a>
-                </li>
-
                 <li><a href="#" class="about">Home</a></li>
                 <li><a href="#" class="experience">Experience</a></li>
                 <li><a href="#" class="porfolio">Portfolio</a></li>
@@ -35,13 +25,11 @@
         </nav>
     </header>
 
-    <!-- <img src="./assets/image/gustavo2016.png" height="200"> -->
-
     <main>
-        <div class="about-me" id="about-me">
+        <div id="about-me">
             <h2>About Me</h2>
 
-            <p class="intro">
+            <p id="introduction">
                 Hello there! My name is Gustavo Martinez and I am excited to share a bit about myself with you.
                 I am 30-years-old currently working at Amazon with a growing passion for understanding and
                 exploring
@@ -60,51 +48,61 @@
                 creativity.
                 Thank you for taking the time to get to know me better.
             </p>
+            
+            <span id="work-xperience">
+                <h2>Work Experience</h2>
+                <p>
+                    In this section, I will review my work experience.
+                    The images bellow indicate my most recent projects where I applied the acquired knowledge from
+                    the
+                    last
+                    three weeks.
+                    Also, I included other work experience that developed my interpersonal and professional skills.
+                </p>
+            </span>
         </div>
 
-        <div class="work-experience">
-
-            <h2>Work Experience</h2>
-
-            <p>
-                In this section, I will review my work experience.
-                The images bellow indicate my most recent projects where I applied the acquired knowledge from
-                the
-                last
-                three weeks.
-                Also, I included other work experience that developed my interpersonal and professional skills.
-            </p>
-
-            <!-- <h2>Other</h2>
-            <ul>
-                <li>Amazon</li>
-                <li>SBM Managment Services</li>
-                <li>American Eagle Outfitters</li>
-            </ul> -->
-        </div>
-
-        <div class="projects">
+        <div id="projects">
             <h2>Portfolio</h2>
 
             <div class="challenges">
-                <div class="image-overlay">
-                    <a href="https://gmtz0794.github.io/steponetosuccess/"><img src="./assets/image/Horiseon.PNG"
-                            height="200" alt="Horiseon image from challenge one" title="Horiseon challenge one"></a>
-                    <a href="https://gmtz0794.github.io/prework-study-guide/"><img src="./assets/image/Prework.PNG"
-                            height="200" alt="prework-study-guide finished" title="Html, CSS, Git, Javascript"></a>
-                    <a href="https://gmtz0794.github.io/weather-app/"><img src="./assets/image/weather-app-img.PNG"
-                            height="200" alt="weather-app" title="Project one"></a>
-                    <a href="https://lonely-zombie-0e4d562d45b2.herokuapp.com/gamepage"><img
-                            src="./assets/image/Lonely-Zombie.PNG" height="200" alt="lonely-zombie"
-                            title="Project two"></a>
-                    <a href="https://get-fit-project-2dc6ca113c41.herokuapp.com/"><img
-                            src="./assets/image/getfitapp.PNG" height="200" alt="get-fit" title="Project three"></a>
+                <div class="slide-view">
+
+                    <div id="slide-one">
+                        <div class="textnumber">1 / 5</div>
+                        <img src="/assets/image/Horiseon.PNG" height="200" alt="challenge one">
+                        <div class="text">Project One</div>
+                    </div>
+
+                    <div id="slide-one">
+                        <div class="textnumber">2 / 5</div>
+                        <img src="/assets/image/Prework.PNG" height="200" alt="challenge one">
+                        <div class="text">Project Two</div>
+                    </div>
+
+                    <div id="slide-one">
+                        <div class="textnumber">3 / 5</div>
+                        <img src="/assets/image/weather-app-img.PNG" height="200" alt="challenge one">
+                        <div class="text">Project Three</div>
+                    </div>
+
+                    <div id="slide-one">
+                        <div class="textnumber">4 / 5</div>
+                        <img src="/assets/image/Lonely-Zombie.PNG" height="200" alt="challenge one">
+                        <div class="text">Project Four</div>
+                    </div>
+
+                    <div id="slide-one">
+                        <div class="textnumber">5 / 5</div>
+                        <img src="/assets/image/getfitapp.PNG" height="200" alt="challenge one">
+                        <div class="text">Project Five</div>
+                    </div>
                 </div>
             </div>
         </div>
+    </main>
 
-
-
+    <footer>
         <div class="contact-info">
             <h2>Contact Information</h2>
 
@@ -115,13 +113,8 @@
                 Email: gmtz.0794@gmail.com<br>
             </p>
         </div>
-    </main>
-
-    <footer>
-        <h2>Made by Gustavo Martinez</h2>
+        <h3>Made by Gustavo Martinez</h2>
     </footer>
-
-    <!-- </div> -->
 
     <script src="assets/script/script.js"></script>
 </body>
