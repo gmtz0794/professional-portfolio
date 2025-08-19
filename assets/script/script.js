@@ -6,8 +6,3 @@ const contactInfo = document.getElementById('contact-info');
 const startButton = document.getElementById('startBtn');
 const hideContent = document.getElementById('hide-content');
 const showContent = document.getElementById('show-content');
-
-startButton.addEventListener('click', () => {
-    hideContent.style.display = 'block';
-    showContent.style.display = 'none';
-});
