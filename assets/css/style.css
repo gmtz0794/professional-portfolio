@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(71, 71, 71);
+    background-color: rgb(24, 28, 39);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 }
 
@@ -15,6 +15,7 @@ h1 {
 }
 
 header {
+    
     position: relative;
     height: 70px;
     display: flex;
@@ -24,7 +25,7 @@ header {
     left: 0;
     width: 100%;
     padding: 1.3rem 5%;
-    background-color: rgb(19, 19, 19);
+    background: linear-gradient(to left, rgb(17, 17, 17), rgb(78, 78, 78));
     z-index: 100;
 }
 
@@ -44,16 +45,95 @@ nav a {
     margin-left: 2.5rem;
 }
 
+#about-me {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 2rem;
+    background: rgb(189, 189, 189);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#about-me h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #030405;
+    border-bottom: 2px solid #202020;
+    padding-bottom: 0.5rem;
+}
+
 p {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    color: rgb(0, 0, 0)44;
+}
+
+#work-experience {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+#work-experience p {
+    margin-top: 0.5rem;
+}
+
+#projects {
+    margin-top: 2rem;
+}
+
+#projects h2 {
+    margin-bottom: 1.5rem;
+}
+
+.slide-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+#slide-one {
+    background: #fafafa;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     text-align: center;
+    padding: 1rem;
+}
+
+#slide-one:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+#slide-one img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.textnumber {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #888;
+    margin-bottom: 0.5rem;
+}
+
+.text {
+    margin-top: 0.5rem;
+    font-weight: 600;
+    color: #2c3e50;
 }
 
 h3 {
     text-align: center;
 }
 
-/* mobile menu */
+footer {
+    display: none;
+}
 
+/* mobile menu */
 .icons {
     position: absolute;
     right: 5%;
